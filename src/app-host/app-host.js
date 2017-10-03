@@ -224,6 +224,9 @@ function exec(success, fail, service, action, args) {
 exec.init = function () {
 };
 
+// Detected by Chrome extension
+window.__TACO_SIMULATE__ = true;
+
 // Setup for cordova patching
 Object.defineProperty(window, 'cordova', {
     set: setCordovaAndInitialize,

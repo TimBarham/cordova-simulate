@@ -16,9 +16,9 @@ var simulate = function (opts) {
         .then(function () {
             return launchBrowser(target, simulator.appUrl());
         })
-        .then(function () {
-            return launchBrowser(target, simulator.simHostUrl());
-        })
+        //.then(function () {
+        //    return launchBrowser(target, simulator.simHostUrl());
+        //})
         .then(function () {
             return simulator;
         })
